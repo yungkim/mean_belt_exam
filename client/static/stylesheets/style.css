@@ -1,0 +1,16 @@
+.indexButton {
+    background: url(../../static/images/transparent-animated-sparkle-glitter-clipart-XHLBzr-clipart.png);
+    cursor: pointer;
+    width: 20%;
+    display: block;
+    border: none;
+}
+.nameInputText {
+    text-transform:capitalize;
+}
+ul {
+    list-style-type: none;
+}
+.left_margin {
+    margin-left: 4em;
+}

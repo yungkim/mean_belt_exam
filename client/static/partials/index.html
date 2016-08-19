@@ -1,0 +1,20 @@
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+
+<div class="jumbotron" style="background: url(static/images/light-blue-wallpaper-pattern-for-background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    <div class="container">
+          <h1>Q &amp; A</h1>
+          <h3>Please enter your name to join</h3>
+        <form name="myForm">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">Name:</span>
+              <input type="text" name="myName" class="form-control nameInputText" id="basic-url" aria-describedby="basic-addon3" autofocus ng-model="user.name" required ng-minlength='2'>
+              
+            </div>
+            <input type="submit" value="Enter" class="indexButton pull-right" ng-click="login(user)">
+            <span class="pull-left" style="color:red">{{message}}</span>
+
+          </form>
+    </div>
+
+</div>

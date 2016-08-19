@@ -1,0 +1,32 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-faded" style="background-color: #e3f2fd;">
+        <div class="nav navbar-nav">
+            <span class="nav-item nav-link"><a href="#/dashboard">Q&amp;A Dashboard</a></span> |
+            <a class="nav-item nav-link" href="/#/question/{{id}}/new_answer">Answer this Question</a> | 
+            <a class="nav-item nav-link" href="/#/" ng-click="logout()">Logout ({{session.name}})</a>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+
+    <div class="panel panel-default" ng-if="!error">
+      <div class="panel-body text-center">
+        <h1>{{question.text}}</h1>
+        <h4>{{question.description}}</h4>
+      </div>
+    </div>
+
+    <ul>
+        <img src="/static/images/LineBreak.png">
+        <li ng-repeat="answer in question._answers | orderBy: '-like'" >
+            <h4>{{answer._user.name}}: 
+                <span class="glyphicon glyphicon-thumbs-up" ng-click="like(answer._id)" style="color:blue">  <button>Like!</button></span> {{answer.like}} likes
+            </h4>
+            <h5>{{answer.text}}</h5>
+            <h6>{{answer.description}}</h6>
+            <img src="/static/images/LineBreak.png">
+        </li>
+    </ul>
+
+</div>

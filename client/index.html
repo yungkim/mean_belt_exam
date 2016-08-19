@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q &amp; A - MEAN Belt Exam</title>
+</head>
+<body ng-app="app">
+  
+    <div ng-view></div>
+
+    <h4>&nbsp;</h4>
+    <h4 style="text-align: center">json: <a href="/users">users</a> - 
+    <a href="/questions">questions</a> - 
+    <a href="/answers">answers</a> - 
+    <a href="/users/session">session</a></h4>
+    <h4>&nbsp;</h4>
+
+</body>
+<script src="angular/angular.js"></script>
+<script src="angular-route/angular-route.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/controllers/indexController.js"></script>
+<script src="assets/factories/dashboardFactory.js"></script>
+<script src="assets/controllers/dashboardController.js"></script>
+<script src="assets/controllers/questionsController.js"></script>
+<script src="assets/factories/questionsFactory.js"></script>
+<script src="assets/controllers/answersController.js"></script>
+<script src="assets/factories/answersFactory.js"></script>
+<script src="assets/factories/usersFactory.js"></script>
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+</html>
